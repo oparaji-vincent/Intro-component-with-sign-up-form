@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.left-side{
+    color: white;
+    margin-top: 80px;
+}
+
+.left-side h1{
+   width: 400px; 
+   font-size: 45px;
+   line-height: 50px;
+}
+
+.left-side p{
+    width: 460px;
+}
+
+.try-button{
+    text-align: center;
+    padding: 15px 90px 15px 90px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0 7px 6px -2px hsl(249, 10%, 26%);
+    cursor: pointer;
+}
+
+
+form{
+    background-color: white;
+    padding: 30px;
+    padding-top: 30px;
+    width: 420px;
+    border-radius: 5px;
+    box-shadow: 0 7px 6px -2px hsl(249, 10%, 26%);
+}
+
+input{
+    padding: 12px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    width: 360px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid  hsl(246, 25%, 77%);
+    font-weight: bold;
+}
+
+.inputImage img{
+    align-items: right;
+    position: relative;
+    left: 330px;
+    bottom: 50px;
+}
+
+.error-message{
+    font-size: 8px;
+    font-style: italic;
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+}
+
+button.claim{
+    padding: 15px 98px 15px 98px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px -2px hsl(249, 10%, 26%);
+}
+
+button.claim:hover{
+    background-color: hsl(154deg 42% 62%);
+}
+
+.terms{
+    font-size: 10px;
+    text-align: center;
+}
+
+.terms b{
+    color: hsl(0, 100%, 74%);
+}
+
+.hide{
+    display: none;
+}
+
+.attribution {
+     font-size: 11px; 
+     color: white;
+     text-align: center; 
+     margin-top: 35px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 480px){
+    body{
+        background-image: url(images/bg-intro-mobile.png);
+        width: 80%;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        right: 15px;
+    }
+
+    .left-side{
+        text-align: center;
+    }
+}
